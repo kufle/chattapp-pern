@@ -22,7 +22,7 @@ function Message({ message }: { message?: MessageType }) {
 					<img alt='Tailwind CSS chat bubble component' src={img} />
 				</div>
 			</div>
-			<p className={`chat-bubble text-white ${bubbleBg} ${shakeClass} text-sm md:text-md`}>{message?.body}</p>
+			<p className={`chat-bubble text-white ${bubbleBg} ${shakeClass} text-sm md:text-md whitespace-pre-line`}>{message?.body}</p>
 			<span className='chat-footer opacity-50 text-xs flex gap-1 items-center text-white'>{humanDate(message?.createdAt)}</span>
 		</div>
 	);
